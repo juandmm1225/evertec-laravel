@@ -36,6 +36,11 @@ ____          _____               _ _           _
                     <input required autocomplete="off" name="telefono" class="form-control"
                            type="text" placeholder="Teléfono">
                 </div>
+                <div class="form-group">
+                    <label class="label">Email</label>
+                    <input required autocomplete="off" name="email" class="form-control"
+                           type="text" placeholder="email">
+                </div>
 
                 @include("notificacion")
                 <button class="btn btn-success">Guardar</button>

@@ -32,6 +32,7 @@ ____          _____               _ _           _
                     <tr>
                         <th>Nombre</th>
                         <th>Teléfono</th>
+                        <th>Email</th>
 
                         <th>Editar</th>
                         <th>Eliminar</th>
@@ -42,6 +43,7 @@ ____          _____               _ _           _
                         <tr>
                             <td>{{$cliente->nombre}}</td>
                             <td>{{$cliente->telefono}}</td>
+                            <td>{{$cliente->email}}</td>
                             <td>
                                 <a class="btn btn-warning" href="{{route("clientes.edit",[$cliente])}}">
                                     <i class="fa fa-edit"></i>

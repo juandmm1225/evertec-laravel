@@ -15,6 +15,10 @@ class CreateVentasTable extends Migration
     {
         Schema::create('ventas', function (Blueprint $table) {
             $table->id();
+            $table->string("customer_name");
+            $table->string("customer_email");
+            $table->string("customer_phone");
+            $table->boolean("status");
             $table->timestamps();
         });
     }

@@ -39,8 +39,7 @@
                     <th>Descripción</th>
                     <th>Código de barras</th>
                     <th>Precio</th>
-                    <th>Cantidad</th>
-                    <th>Subtotal</th>
+
                 </tr>
                 </thead>
                 <tbody>
@@ -49,8 +48,6 @@
                         <td>{{$producto->descripcion}}</td>
                         <td>{{$producto->codigo_barras}}</td>
                         <td>${{number_format($producto->precio, 2)}}</td>
-                        <td>{{$producto->cantidad}}</td>
-                        <td>${{number_format($producto->cantidad * $producto->precio, 2)}}</td>
                     </tr>
                 @endforeach
                 </tbody>

@@ -70,7 +70,6 @@
                             <th>Código de barras</th>
                             <th>Descripción</th>
                             <th>Precio</th>
-                            <th>Cantidad</th>
                             <th>Quitar</th>
                         </tr>
                         </thead>
@@ -80,7 +79,7 @@
                                 <td>{{$producto->codigo_barras}}</td>
                                 <td>{{$producto->descripcion}}</td>
                                 <td>${{number_format($producto->precio_venta, 2)}}</td>
-                                <td>{{$producto->cantidad}}</td>
+
                                 <td>
                                     <form action="{{route("quitarProductoDeVenta")}}" method="post">
                                         @method("delete")
@@ -99,7 +98,7 @@
             @else
                 <h2>Aquí aparecerán los productos de la venta
                     <br>
-                    Escanea el código de barras o escribe y presiona Enter</h2>
+                    Escribe y presiona Enter</h2>
             @endif
         </div>
     </div>

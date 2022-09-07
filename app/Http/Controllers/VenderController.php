@@ -53,12 +53,14 @@ class VenderController extends Controller
         foreach ($productos as $producto) {
             // El producto que se vende...
             $productoVendido = new ProductoVendido();
+            $cliente = new Cliente();
             $productoVendido->fill([
                 "id_venta" => $idVenta,
                 "descripcion" => $producto->descripcion,
                 "codigo_barras" => $producto->codigo_barras,
                 "precio" => $producto->precio_venta,
-                "cantidad" => $producto->cantidad,
+                "nombre" => $cliente->customer_name,
+
             ]);
             // Lo guardamos
             $productoVendido->saveOrFail();

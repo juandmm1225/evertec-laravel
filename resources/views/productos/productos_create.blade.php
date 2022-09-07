@@ -46,11 +46,7 @@
                     <input required autocomplete="off" name="precio_venta" class="form-control"
                            type="decimal(9,2)" placeholder="Precio de venta">
                 </div>
-                <div class="form-group">
-                    <label class="label">Existencia</label>
-                    <input required autocomplete="off" name="existencia" class="form-control"
-                           type="decimal(9,2)" placeholder="Existencia">
-                </div>
+
 
                 @include("notificacion")
                 <button class="btn btn-success">Guardar</button>
